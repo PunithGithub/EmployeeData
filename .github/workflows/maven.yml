@@ -24,8 +24,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-          Json=$(cat./employee.json)
-          echo "::set-output name=matrix::${JSON//'%'/'%25'}"
+         
          function loaddetails(){
            var output= " ";
           $.getJSON("employee.json", function(response){
