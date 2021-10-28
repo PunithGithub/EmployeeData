@@ -24,9 +24,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-function loaddetails()
-{
-      var output= " ";
+          Json=$(cat./employee.json)
+          echo "::set-output name=matrix::${JSON//'%'/'%25'}"
+         function loaddetails(){
+           var output= " ";
           $.getJSON("employee.json", function(response){
           $.each(response.Employees,function(k,v){
                console.log(this);
@@ -39,4 +40,4 @@ function loaddetails()
                output+="</table>"
                documents.getEmployeeByID('demo').innerHTML=output;
           );
-
+##
