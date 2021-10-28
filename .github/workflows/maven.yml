@@ -24,3 +24,16 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+function loaddetails(){
+ var output= " ";
+          $.getJSON("employee.json", function(response){
+          $.each(response.Employees,function(k,v){
+               console.log(this);
+               output+="<tr>"
+               output+="<td>"+v.userID +"</td><td>"+v.jobTitleName+"</td><td>"+ v.region +"</td>"
+               output+="</tr>";
+               }};
+               }};
+               output+="</table>"
+               documents.getEmployeeByID('demo').innerHTML=output;
+          );
