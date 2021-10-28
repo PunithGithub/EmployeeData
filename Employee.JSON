@@ -1,18 +1,38 @@
-EmployeeDetails
-[
+{
+"Employees" :[
   {
-    "EmpName": "Punith M",
-     "EmpDesign": "Lead",
-     "EmpID": 401
+  "userId": "PunithM",
+   "JobTitleName": "Developer",
+   "firstName": "Punith",
+    "lastNmae": "M",
+    "PreferredFullName": "Punith M",
+    "employeeCode": "E1",
+    "region": "CA",
+    "phoneNumber": "9883768667",
+    "emailAddress": "Punith.m@gmail.com"
   },
-  {
-    "EmpName": "Praveen M",
-     "EmpDesign": "Lead",
-     "EmpID": 402
+{
+  "userId": "RamV",
+   "JobTitleName": "Testing",
+   "firstName": "Ram",
+    "lastNmae": "V",
+    "PreferredFullName": "Ram V",
+    "employeeCode": "E2",
+    "region": "CA",
+    "phoneNumber": "8883768666",
+    "emailAddress": "Ram.V@gmail.com"
   },
-  {
-    "EmpName": "Ram M",
-     "EmpDesign": "Lead",
-     "EmpID": 403
+{
+  "userId": "Kumar",
+   "JobTitleName": "Admin",
+   "firstName": "Kumar",
+    "lastNmae": "M",
+    "PreferredFullName": "Kumar M",
+    "employeeCode": "E3",
+    "region": "CA",
+    "phoneNumber": "7883568667",
+    "emailAddress": "Kumar.m@gmail.com"
   }
 ]
+
+}
