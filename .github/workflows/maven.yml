@@ -37,3 +37,4 @@ function loaddetails()
                output+="</table>"
                documents.getEmployeeByID('demo').innerHTML=output;
           );
+}
